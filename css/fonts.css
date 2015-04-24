@@ -1,0 +1,13 @@
+@charset "UTF-8";
+/* CSS Document */
+
+@font-face {
+    font-family: 'BradleyHandITCTT-Bold';
+	src: url('../fonts/BradleyHandITCTT-Bold.eot');
+	src: url('../fonts/BradleyHandITCTT-Bold.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/BradleyHandITCTT-Bold.woff') format('woff'),
+         url('../fonts/BradleyHandITCTT-Bold.ttf') format('truetype'),
+         url('../fonts/BradleyHandITCTT-Bold.svg#BradleyHandITCTT') format('svg');
+	font-weight: normal;
+    font-style: normal;	
+}

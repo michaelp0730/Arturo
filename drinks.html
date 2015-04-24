@@ -1,0 +1,79 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Arturo's Drinks</title>
+    <link rel="stylesheet" href="css/fonts.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <!--[if lt IE 9]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif] -->
+</head>
+<body>
+    <header class="main">
+        <nav>
+            <span id="home_btn">
+                <a href="index.html"><img src="img/home_off.png" data-rollover="img/home_on.png" alt="Home" width="90" height="39" /></a>
+            </span>
+            <span id="menu_btn">
+                <a href="menu.html"><img src="img/menu_off.png" data-rollover="img/menu_on.png" alt="Menu" width="90" height="39" /></a>
+            </span>
+            <span id="drinks_btn">
+                <a href="drinks.html"><img src="img/drinks_on.png" data-rollover="img/drinks_on.png" alt="Drinks" width="90" height="39" /></a>
+            </span>
+            <span id="happy_hour_btn">
+                <a href="happy_hour.html"><img src="img/happy_hour_off.png" data-rollover="img/happy_hour_on.png" alt="Happy Hour" width="123" height="39" /></a>
+            </span>
+            <span id="contact_btn">
+                <a href="contact.html"><img src="img/contact_off.png" data-rollover="img/contact_on.png" alt="Contact Us" width="123" height="39" /></a>
+            </span>
+        </nav>
+    </header>
+
+    <div class="social-buttons clearfix">
+        <img src="img/logo_final.jpg" alt="Arturo's Mexican Restaurant" class="left" />
+        <a href="https://www.facebook.com/pages/Arturos-Mexican-Restaurant/362550827179276?fref=ts" target="_blank"><img src="img/facebookLogo.png" alt="Visit our Facebook Page" /></a>
+        <a href="https://twitter.com/ArturosMexican" target="_blank"><img src="img/twitterLogo.png" alt="Visit our Twitter Page" /></a>
+    </div>
+
+    <div id="drinks_info">
+        <div id="slideshow" class="drinks">
+            <img src="img/bar1.jpg" alt="" width="424" height="283" style="display:block;" />
+            <img src="img/bar2.jpg" alt="" width="424" height="283" />
+            <img src="img/bar3.jpg" alt="" width="424" height="283" />
+            <img src="img/bar4.jpg" alt="" width="424" height="283" />
+            <img src="img/bar5.jpg" alt="" width="424" height="283" />
+        </div>
+        <h3>Drinks</h3>
+        <p>All drinks at Arturo's are hand crafted with the finest ingredients. We take great pride in our spirits collection, including an excellent selection of high quality tequilas. Our drink menu includes all the classics, such as:
+            <ul>
+                <li>Margaritas</li>
+                <li>Pi&ntilde;a Coladas</li>
+                <li>Mojitos</li>
+                <li>Bloody Mary's</li>
+                <li>Martinis</li>
+            </ul>
+            Our bartenders are also happy to make you any cocktail you desire. Be sure to join us for <a href="happy_hour.html">happy hour</a> everyday from 3:00pm to 6:00pm. Remember that when you're visiting Arturo's, you're family!
+        </p>
+    </div>
+
+    <footer class="main">Copyright &copy; <span id="copyright_year"></span> ArturoMexicanRestaurant.com &nbsp;|&nbsp; All Rights Reserved &nbsp;|&nbsp; 22204 Marine View Drive S. Des Moines WA. 98198 &nbsp;|&nbsp; 206&ndash;824&ndash;1155
+    </footer>
+
+    <!-- get jquery -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.8.0.min.js"><\/script>')</script>
+
+    <!-- get custom scripts -->
+    <script src="js/main.js"></script>
+    <script src="js/jquery.cycle.all.latest.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $('#slideshow').cycle({
+                fx: 'fade'
+            });
+        });
+    </script>
+</body>
+</html>
