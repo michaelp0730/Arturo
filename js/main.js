@@ -20,7 +20,7 @@ onLoad(function() { onLoad.loaded = true; });
 function preloadImages() {
 	if (document.images) {
 		for (var i = 0; i < preloadImages.arguments.length; i++) {
-			(new Image()).src = preloadImages.arguments[i];
+			(new Image()).src = preloadImages.arguments[i];	
 		}
 	}
 } // end image preloader
@@ -30,8 +30,8 @@ function preloadImages() {
 onLoad(function() { // Everything in one anonymous function: no symbols defined
     // Loop through all images, looking for the data-rollover attribute
     for(var i = 0; i < document.images.length; i++) {
-        var img = document.images[i];
-        var rollover = img.getAttribute("data-rollover");
+        var img = document.images[i]; 
+        var rollover = img.getAttribute("data-rollover"); 
         if (!rollover) continue;  // Skip images without data-rollover
 
         // Ensure that the rollover image is in the cache
@@ -54,18 +54,18 @@ onLoad(function() { // Everything in one anonymous function: no symbols defined
 // begin copyright code
 onLoad(function copyright() {
 	'use strict';
-
+	
 	// declare variables
 	var date = new Date(),
 	year = date.getFullYear(),
 	copyright_year = document.getElementById('copyright_year');
-
+	
 	if (year == 2012) {
-		copyright_year.innerHTML = '2012';
+		copyright_year.innerHTML = '2012';	
 	} else {
 		copyright_year.innerHTML = '2012 - ' + year;
 	}
-
+	
 	return false;
 });
 //window.onload = copyright;
